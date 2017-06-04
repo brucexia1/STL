@@ -13,8 +13,15 @@ public:
 };
 
 
+template<>
+class testClass<int>
+{
+public:
+	static int _data;
+};
+
 // 为static data member 进行定义，并设初值
-template<> int testClass<int>::_data = 1;
+int testClass<int>::_data = 1;
 template<> int testClass<char>::_data = 2;
 
 int main()
