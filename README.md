@@ -1,4 +1,4 @@
 # STL
 
 
- explicit specialization  --- 模板参数特化
+ template member explicit specialization  --- 模板参数特化
